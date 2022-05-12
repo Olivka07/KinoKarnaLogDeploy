@@ -19,8 +19,7 @@ app.use('/api/auth', require('./routes/auth.routes'))
 //   })
 // }
 
-const PORT = process.env.PORT || config.get('port')
-
+const PORT = config.get('port') || process.env.PORT 
 async function start() {
   try {
     await mongoose.connect(config.get('mongoUri'), { })
