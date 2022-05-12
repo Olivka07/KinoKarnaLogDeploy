@@ -4,9 +4,9 @@
   "description": "MERN stack",
   "main": "app.js",
   "scripts": {
-    "jump": "node app.js",
+    "start1": "node app.js",
     "server": "nodemon app.js",
-    "client": "npm run jump --prefix client",
+    "client": "npm run start --prefix client",
     "start": "concurrently \"npm run server\" \"npm run client\" \"python about_flask.py\""
   },
   "keywords": [
