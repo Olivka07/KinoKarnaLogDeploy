@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Выбор фильма
+{% endblock %}
+
+{% block head %}
+    <style> 
+    body{
+      background: rgb(137, 227, 243); /* Цвет фона */
+    }
+     #namefilm, #butt{
+       width: 400px;
+       margin: auto;
+       background: rgb(85, 19, 126); /* Цвет фона */
+       color: rgb(253, 253, 253);
+       font-weight: 700;
+     }
+     #label1{
+       color:rgb(255, 255, 255);
+       font-weight: 400;
+       margin-left: 560px;
+     }
+    </style>
+    <script>
+       function Add() {
+        var str = document.getElementById("namefilm").value ;
+        var butt = document.getElementById("butt");
+        butt.setAttribute('href',"/about/"+String(str));
+       }
+      </script>
+{% endblock %}
+
+{% block body %}
+    <div class = "container">
+    </div>
+    <form>
+      <br><br><br><br><br><br>
+      <h1 class="h3 mb-3 fw-normal">Введите название фильма</h1>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="namefilm" name = "namefilm" >
+        <label id="label1" for="namefilm">Название фильма</label>
+      </div>
+      <br>
+      <br><br>
+      <a href="/about/namefilm" class="btn btn-outline-success"  onclick="Add()" type="submit" id="butt" name="butt">Продолжить</a>
+      
+    </form>
+{% endblock %}
+
+
+
+
+
+

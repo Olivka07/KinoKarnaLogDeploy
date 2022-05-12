@@ -1,0 +1,42 @@
+.myclass{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.myclass1{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffa600;
+    display: block;
+    font-weight: 400;
+}
+
+.myclass2{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ac0808;
+    display: block;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.myclass3{
+    width: 200px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: solid;
+    font-size: 25px;
+    background-color : #5a0735;
+    color:rgb(255, 8, 0);
+    display: block;
+    font-family:cursive;
+}
+
